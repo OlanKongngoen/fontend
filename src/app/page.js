@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import natureImage from './/nature.jpg';
-import oceanImage from './/ocean.jpg'
+import lakeImage from './/Lake.jpg';
+import desertImage from './/Desert.jpg'
 import './/globals.css';
 import Script from "next/script";
 
@@ -48,40 +49,68 @@ export default function Home() {
                 <Image src={natureImage} className="d-clock w-100" alt="Nature" />
               </div>
               <div className="carousel-item">
-              <Image src={oceanImage} className="d-clock w-100" alt="Ocean" />
+              <Image src={lakeImage} className="d-clock w-100" alt="Lake" />
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="perv">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
           </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
           </button>
         </div>
             </div>
           </div>
 
-        <div className="row mb-3 ">
-        <div className="col-md-4 text-center bg-light p-5  border rounded">
-            Card
+        <div className="col md-12 p-5 ">
+          <div className="card shadow-sm" style={{ width: '18rem' }}>
+            <Image src={natureImage} className="card-img-top" alt="Logorina" width={286} height={180} />
+            <div className="card-body">
+              <h5 className="card-title">ธรรมชาติ</h5>
+              <p className="card-text"> ปรากฏการณ์ของโลกกายภาพ และยังหมายถึงชีวิตโดยรวม มีขนาดตั้งแต่เล็กกว่าอะตอมไปจนถึงจักรวาล การศึกษาธรรมชาติเป็นส่วนประกอบใหญ่ส่วนหนึ่ง (และอาจเป็นหนึ่งเดียว) ของวิทยาศาสตร์ </p>
+                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
+              </div>
+            </div>
           </div>
-          <div className="col-md-4 text-center bg-light p-5  border rounded">
-            Card
+
+          <div className="col md-12 p-5  ">
+          <div className="card shadow-sm" style={{ width: '18rem' }}>
+            <Image src={lakeImage} className="card-img-top" alt="Logorina" width={286} height={180} />
+            <div className="card-body">
+              <h5 className="card-title">ทะเลสาบ</h5>
+              <p className="card-text">  เป็นแหล่งน้ำขนาดใหญ่ ที่ล้อมรอบด้วยผืนดิน โดยทั่วไปทะเลสาบจะไม่มีทางไหลออกสู่ทะเล และมีน้ำจืด</p>
+                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
+              </div>
+            </div>
           </div>
-          <div className="col-md-4 text-center bg-light p-5  border rounded">
-          Card
+
+          <div className="col md-12 p-5">
+          <div className="card shadow-sm" style={{ width: '18rem' }}>
+            <Image src={desertImage} className="card-img-top" alt="Logorina" width={286} height={180} />
+            <div className="card-body">
+              <h5 className="card-title">ทะเลทราย</h5>
+              <p className="card-text"> เป็นบริเวณแผ่นดินแห้งแล้งซึ่งเกิดหยาดน้ำฟ้าน้อยและทำให้สภาพการดำรงชีพไม่เอื้อสำหรับพืชและสัตว์ ประมาณหนึ่งในสามของพื้นผิวดินของโลกแห้งแล้งหรือกึ่งแห้งแล้ง ซึ่งรวมเขตขั้วโลกด้วยซึ่งเกิดหยาดน้ำฟ้าน้อย และบ้างเรียก "บริเวณแห้งแล้งเย็น" บริเวณแห้งแล้งสามารถจำแนกได้โดยปริมาณหยาดน้ำฟ้าที่ตก อุณหภูมิ </p>
+                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
+              </div>
+            </div>
           </div>
-        </div>
 
         <div className="row">
-        <div className="col-md-12 text-center bg-success p-5 border rounded">
-            FOOTER
-          </div>
-        </div>
+        <footer class="bg-success py-3 my-4 border rounded">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+  </footer>
 
-      </div>
+            </div>
+          </div>
 
 </>
   );
