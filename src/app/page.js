@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import natureImage from './/nature.jpg';
 import lakeImage from './/Lake.jpg';
-import desertImage from './/Desert.jpg'
 import './/globals.css';
 import Script from "next/script";
 
@@ -88,7 +87,7 @@ export default function Home() {
 
           <div className="col md-12 p-5">
           <div className="card shadow-sm" style={{ width: '18rem' }}>
-            <Image src={desertImage} className="card-img-top" alt="Logorina" width={286} height={180} />
+            <Image src={natureImage} className="card-img-top" alt="Logorina" width={286} height={180} />
             <div className="card-body">
               <h5 className="card-title">ทะเลทราย</h5>
               <p className="card-text"> เป็นบริเวณแผ่นดินแห้งแล้งซึ่งเกิดหยาดน้ำฟ้าน้อยและทำให้สภาพการดำรงชีพไม่เอื้อสำหรับพืชและสัตว์ ประมาณหนึ่งในสามของพื้นผิวดินของโลกแห้งแล้งหรือกึ่งแห้งแล้ง ซึ่งรวมเขตขั้วโลกด้วยซึ่งเกิดหยาดน้ำฟ้าน้อย และบ้างเรียก "บริเวณแห้งแล้งเย็น" บริเวณแห้งแล้งสามารถจำแนกได้โดยปริมาณหยาดน้ำฟ้าที่ตก อุณหภูมิ </p>
