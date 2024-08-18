@@ -31,13 +31,15 @@ export default function Home() {
         </li>
       </ul>
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button className="btn btn-primary me-md-2" type="button">
-          Sign in
-        </button>
         <Link href="/signup">
           <button className="btn btn-primary" type="button">
             Sign Up
           </button>
+          </Link>
+          <Link href="/signin">
+          <button className="btn btn-primary me-md-2" type="button">
+          Sign In
+        </button>
         </Link>
       </div>
     </div>
@@ -70,38 +72,29 @@ export default function Home() {
             </div>
           </div>
 
-        <div className="col md-12 p-5 ">
-          <div className="card shadow-sm" style={{ width: '18rem' }}>
-            <Image src={natureImage} className="card-img-top" alt="Logorina" width={286} height={180} />
-            <div className="card-body">
-              <h5 className="card-title">ธรรมชาติ</h5>
-              <p className="card-text"> ปรากฏการณ์ของโลกกายภาพ และยังหมายถึงชีวิตโดยรวม มีขนาดตั้งแต่เล็กกว่าอะตอมไปจนถึงจักรวาล การศึกษาธรรมชาติเป็นส่วนประกอบใหญ่ส่วนหนึ่ง (และอาจเป็นหนึ่งเดียว) ของวิทยาศาสตร์ </p>
-                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
-              </div>
-            </div>
-          </div>
-
-          <div className="col md-12 p-5  ">
-          <div className="card shadow-sm" style={{ width: '18rem' }}>
-            <Image src={lakeImage} className="card-img-top" alt="Logorina" width={286} height={180} />
-            <div className="card-body">
-              <h5 className="card-title">ทะเลสาบ</h5>
-              <p className="card-text">  เป็นแหล่งน้ำขนาดใหญ่ ที่ล้อมรอบด้วยผืนดิน โดยทั่วไปทะเลสาบจะไม่มีทางไหลออกสู่ทะเล และมีน้ำจืด</p>
-                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
-              </div>
-            </div>
-          </div>
-
-          <div className="col md-12 p-5">
-          <div className="card shadow-sm" style={{ width: '18rem' }}>
-            <Image src={natureImage} className="card-img-top" alt="Logorina" width={286} height={180} />
-            <div className="card-body">
-              <h5 className="card-title">ทะเลทราย</h5>
-              <p className="card-text"> เป็นบริเวณแผ่นดินแห้งแล้งซึ่งเกิดหยาดน้ำฟ้าน้อยและทำให้สภาพการดำรงชีพไม่เอื้อสำหรับพืชและสัตว์ ประมาณหนึ่งในสามของพื้นผิวดินของโลกแห้งแล้งหรือกึ่งแห้งแล้ง ซึ่งรวมเขตขั้วโลกด้วยซึ่งเกิดหยาดน้ำฟ้าน้อย และบ้างเรียก "บริเวณแห้งแล้งเย็น" บริเวณแห้งแล้งสามารถจำแนกได้โดยปริมาณหยาดน้ำฟ้าที่ตก อุณหภูมิ </p>
-                {/* เพิ่มเติมปุ่มหรือลิงก์หากต้องการ */}
-              </div>
-            </div>
-          </div>
+  <div className="d-flex flex-row">
+  <div className="card" style={{width: '30rem'}}>
+    <Image src={natureImage} className="card-img-top" alt="Nature" />
+    <div className="card-body">
+      <h5 className="card-title">ความหมาย</h5>
+      <p className="card-text"> ธรรมชาติหมายถึงทุกสิ่งทุกอย่างที่เกิดขึ้นเองตามธรรมชาติ ไม่ว่าจะเป็นสิ่งมีชีวิต เช่น พืช สัตว์ มนุษย์ หรือสิ่งไม่มีชีวิต เช่น ภูเขา แม่น้ำ ท้องฟ้า ดวงดาว</p>
+    </div>
+  </div>
+  <div className="card" style={{width: '30rem'}}>
+    <Image src={natureImage} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h5 className="card-title">ที่มา</h5>
+      <p className="card-text">คำว่า "ธรรมชาติ" มาจากภาษาสันสกฤต ซึ่งมีความหมายว่า "สิ่งที่เป็นไปตามธรรมดา" หรือ "สภาวะที่เป็นอยู่ตามธรรมชาติ" คำนี้สะท้อนให้เห็นถึงความเชื่อของคนโบราณที่เชื่อว่าธรรมชาติมีกฎเกณฑ์และระเบียบของตัวเอง ซึ่งมนุษย์ควรอยู่ร่วมกับธรรมชาติอย่างสอดคล้อง</p>
+    </div>
+  </div>
+  <div className="card" style={{width: '30rem'}}>
+    <Image src={natureImage} className="card-img-top" alt="..." />
+    <div className="card-body">
+      <h5 className="card-title">ความสำคัญ</h5>
+      <p className="card-text">ธรรมชาติเปรียบเสมือนบ้านของเรา การดูแลธรรมชาติก็เหมือนกับการดูแลบ้านของเราเอง เพื่อให้ลูกหลานได้อยู่อาศัยในโลกที่สวยงามและยั่งยืน</p>
+    </div>
+  </div>
+</div>
 
         <div className="row">
         <footer class="bg-success py-3 my-4 border rounded">

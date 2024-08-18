@@ -1,60 +1,49 @@
 
-  export default function Signup() {
+  export default function signup() {
   return (
 
-  <div>
-    <div classname="row g-3">
-      <div classname="col-md-6">
-        <label htmlfor="inputEmail4" classname="form-label">Email</label>
-        <input type="email" classname="form-control" id="inputEmail4" />
-      </div>
-      <div classname="col-md-6">
-        <label htmlfor="inputPassword4" classname="form-label">Password</label>
-        <input type="password" classname="form-control" id="inputPassword4" />
-      </div>
+    
+<div className="container mt-5">
+  <div className="card">
+    <div className="card-header">
+      กรอกข้อมูลลงทะเบียน
     </div>
-    <div classname="row g-3">
-      <div classname="col-12">
-        <label htmlfor="inputAddress" classname="form-label">Address</label>
-        <input type="text" classname="form-control" id="inputAddress" placeholder="1234 Main St" />
-      </div>
-      <div classname="col-12">
-        <label htmlfor="inputAddress2" classname="form-label">Address 2</label>
-        <input type="text" classname="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-      </div>
-    </div>
-    <div classname="row g-3">
-      <div classname="col-md-6">
-        <label htmlfor="inputCity" classname="form-label">City</label>
-        <input type="text" classname="form-control" id="inputCity" />
-      </div>
-      <div classname="col-md-4">
-        <label htmlfor="inputState" classname="form-label">State</label>
-        <select id="inputState" classname="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div classname="col-md-2">
-        <label htmlfor="inputZip" classname="form-label">Zip</label>
-        <input type="text" classname="form-control" id="inputZip" />
-      </div>
-    </div>
-    <div classname="row g-3">
-      <div classname="col-12">
-        <div classname="form-check">
-          <input classname="form-check-input" type="checkbox" id="gridCheck" />
-          <label classname="form-check-label" htmlfor="gridCheck">
-            Check me out
-          </label>
+    <div className="card-body">
+      <form>
+        <div className="form-group">
+          <label htmlFor="exampleInputFirstName1">First name</label>
+          <input type="email" className="form-control" id="exampleInputFirstName1" placeholder="กรอกชื่อ" />
         </div>
-      </div>
-    </div>
-    <div classname="row g-3">
-      <div classname="col-12">
-        <button type="submit" classname="btn btn-primary">Sign in</button>
-      </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputLastName1">Last name</label>
+          <input type="password" className="form-control" id="exampleInputPassword1" placeholder="กรอกนามสกุล" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputEmail1">Email</label>
+          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="กรอกอีเมลของคุณ" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputAddress1">Address</label>
+          <input type="email" className="form-control" id="exampleInputAddress1" placeholder="กรอกอีเมลของคุณ" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputAddress2">Address2</label>
+          <input type="email" className="form-control" id="exampleInputAddress2" placeholder="กรอกอีเมลของคุณ" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="exampleInputPhoneNumber1">Phone Number</label>
+          <input type="email" className="form-control" id="exampleInputPhoneNumber1" placeholder="กรอกอีเมลของคุณ" />
+        </div>
+        <div className="form-group form-check">
+          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+          <label className="form-check-label" htmlFor="exampleCheck1">ฉันยอมรับเงื่อนไขการใช้งาน</label>
+        </div>
+        <button type="submit" className="btn btn-primary">Sign Up</button>
+      </form>
     </div>
   </div>
+</div>
+
+
   );
   }
