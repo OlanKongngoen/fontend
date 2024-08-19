@@ -14,16 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={prompt.className}>{children}</body>
-      <div classname="row">
-    <footer className="bg-success py-3 my-4 border rounded">
-      <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Home</a></li>
-        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">About</a></li>
-        <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Contact</a></li>
-      </ul>
-      <p className="text-center text-body-secondary">© Chiang Mai Technical ollege</p>
-    </footer>
-  </div>
     </html>
   
   );
