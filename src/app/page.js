@@ -28,16 +28,12 @@ export default function Home() {
               <li className="nav-item">
                 <Link className="nav-link" href="/Contact">Contact</Link>
               </li>
-        <Link href="/Signup">
-          <button className="btn btn-primary" type="button">
-            Sign Up
-          </button>
-          </Link>&nbsp;
-          <Link href="/Signin">
-          <button className="btn btn-primary me-md-2" type="button">
-          Sign In
-        </button>
-        </Link>&nbsp;
+              <li class="nav-item">
+        <a href="/Signup" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signup</a>
+        </li>&nbsp;
+        <li class="nav-item">
+        <a href="/Signin" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signin</a>
+        </li>&nbsp;
       </ul>
       </div>
     </div>
