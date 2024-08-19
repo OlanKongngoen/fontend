@@ -29,10 +29,10 @@ export default function Home() {
                 <Link className="nav-link" href="/Contact">Contact</Link>
               </li>
               <li class="nav-item">
-        <a href="/Signup" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signup</a>
+        <a href="/signup" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signup</a>
         </li>&nbsp;
         <li class="nav-item">
-        <a href="/Signin" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signin</a>
+        <a href="/signin" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">Signin</a>
         </li>&nbsp;
       </ul>
       </div>
