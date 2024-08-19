@@ -19,30 +19,28 @@ export default function Home() {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-        </li>
-      </ul>
-      <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+      <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" href="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/About">About</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/Contact">Contact</Link>
+              </li>
         <Link href="/Signup">
           <button className="btn btn-primary" type="button">
             Sign Up
           </button>
-          </Link>
+          </Link>&nbsp;
           <Link href="/Signin">
           <button className="btn btn-primary me-md-2" type="button">
           Sign In
         </button>
-        </Link>
+        </Link>&nbsp;
+      </ul>
       </div>
     </div>
-  </div>
 </nav>
 
 
@@ -59,20 +57,20 @@ export default function Home() {
               <Image src={nature2Image} className="d-clock w-100" alt="Lake" />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+                    <span className="visually-hidden">Previous</span>
+                </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true" />
+                    <span className="visually-hidden">Next</span>
+                </button>
             </div>
             </div>
           </div>
 
   <div className="d-flex flex-row">
-  <div className="card" style={{width: '30rem'}}>git add .
+  <div className="card" style={{width: '30rem'}}>
     <Image src={natureImage} className="card-img-top" alt="Nature" />
     <div className="card-body">
       <h5 className="card-title">ความหมาย</h5>
