@@ -1,5 +1,5 @@
 
-  export default function signin() {
+  export default function Signin() {
   return (
 
 <div className="container d-flex justify-content-center align-items-center min-vh-100">

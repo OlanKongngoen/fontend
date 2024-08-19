@@ -1,7 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import natureImage from './/nature.jpg';
-import lakeImage from './/Lake.jpg';
+import nature2Image from './/nature 2.jpg';
+import nature3Image from './/nature 3.jpg';
+import nature4Image from './/nature 4.jpg';
 import './/globals.css';
 import Script from "next/script";
 import Link from "next/link";
@@ -24,19 +26,16 @@ export default function Home() {
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">contact</a>
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
         </li>
       </ul>
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-        <Link href="/signup">
+        <Link href="/Signup">
           <button className="btn btn-primary" type="button">
             Sign Up
           </button>
           </Link>
-          <Link href="/signin">
+          <Link href="/Signin">
           <button className="btn btn-primary me-md-2" type="button">
           Sign In
         </button>
@@ -54,26 +53,26 @@ export default function Home() {
             <div id="carouselExampleRided" className="carousel Silde" data-bs-ride="true">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                <Image src={natureImage} className="d-clock w-100" alt="Nature" />
+                <Image src={nature4Image} className="d-clock w-100" alt="Nature" />
               </div>
               <div className="carousel-item">
-              <Image src={lakeImage} className="d-clock w-100" alt="Lake" />
+              <Image src={nature2Image} className="d-clock w-100" alt="Lake" />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
-        </div>
+            </div>
             </div>
           </div>
 
   <div className="d-flex flex-row">
-  <div className="card" style={{width: '30rem'}}>
+  <div className="card" style={{width: '30rem'}}>git add .
     <Image src={natureImage} className="card-img-top" alt="Nature" />
     <div className="card-body">
       <h5 className="card-title">ความหมาย</h5>
@@ -81,14 +80,14 @@ export default function Home() {
     </div>
   </div>
   <div className="card" style={{width: '30rem'}}>
-    <Image src={natureImage} className="card-img-top" alt="..." />
+    <Image src={nature2Image} className="card-img-top" alt="..." />
     <div className="card-body">
       <h5 className="card-title">ที่มา</h5>
       <p className="card-text">คำว่า "ธรรมชาติ" มาจากภาษาสันสกฤต ซึ่งมีความหมายว่า "สิ่งที่เป็นไปตามธรรมดา" หรือ "สภาวะที่เป็นอยู่ตามธรรมชาติ" คำนี้สะท้อนให้เห็นถึงความเชื่อของคนโบราณที่เชื่อว่าธรรมชาติมีกฎเกณฑ์และระเบียบของตัวเอง ซึ่งมนุษย์ควรอยู่ร่วมกับธรรมชาติอย่างสอดคล้อง</p>
     </div>
   </div>
   <div className="card" style={{width: '30rem'}}>
-    <Image src={natureImage} className="card-img-top" alt="..." />
+    <Image src={nature3Image} className="card-img-top" alt="..." />
     <div className="card-body">
       <h5 className="card-title">ความสำคัญ</h5>
       <p className="card-text">ธรรมชาติเปรียบเสมือนบ้านของเรา การดูแลธรรมชาติก็เหมือนกับการดูแลบ้านของเราเอง เพื่อให้ลูกหลานได้อยู่อาศัยในโลกที่สวยงามและยั่งยืน</p>
@@ -100,12 +99,10 @@ export default function Home() {
         <footer class="bg-success py-3 my-4 border rounded">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
     </ul>
-    <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+    <p class="text-center text-body-secondary">© Chiang Mai Technical ollege</p>
   </footer>
 
             </div>
